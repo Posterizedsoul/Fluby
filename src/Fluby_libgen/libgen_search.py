@@ -40,17 +40,7 @@ class LibgenSearch:
 
 
 def filter_results(results, filters, exact_match):
-    """
-    Returns a list of results that match the given filter criteria.
-    When exact_match = true, we only include results that exactly match
-    the filters (ie. the filters are an exact subset of the result).
-
-    When exact-match = false,
-    we run a case-insensitive check between each filter field and each result.
-
-    exact_match defaults to TRUE -
-    this is to maintain consistency with older versions of this library.
-    """
+ 
 
     filtered_list = []
     if exact_match:
